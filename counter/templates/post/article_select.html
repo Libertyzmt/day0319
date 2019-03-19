@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+{% for select in selects %}
+    <h3><a href="{% url 'post' select.id %}">{{ select.title }}</a></h3>
+{% endfor %}
+
+</body>
+</html>
